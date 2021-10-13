@@ -1,0 +1,39 @@
+/*INDEX*/
+.banner{
+    background-image: linear-gradient(to top, #a18cd180 0%, #fbc2eb79 100%), url(../imagenes/gato.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--presentacion{
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.videosIndex{
+    font-family: 'Lato', sans-serif;
+    &--titulo{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    &__articulo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        &--iframe{
+            margin-right: 20px;
+        }
+    }
+    &--texto{
+        font-size: 2rem;
+        text-align: center;
+    }
+}

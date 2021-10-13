@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+@import "./layout/grid";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./secciones/index";
+@import "./secciones/razas";
+@import "./secciones/cuidados";
+@import "./secciones/multimedia";
+@import "./secciones/contacto";
+@import "./parciales/mediaQueries";
+

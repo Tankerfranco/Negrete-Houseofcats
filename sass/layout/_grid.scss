@@ -1,0 +1,25 @@
+/*Grid y estilos de las secciones*/
+.contenedor {
+    display: grid;
+    grid-template: 
+        "header" auto
+        "main" 1fr
+        "sec" auto
+        "footer" 100px /
+         1fr;
+
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+        background: #FFE7FF;
+    }
+    .sec{
+        grid-area: sec;
+        background: #FFE7FF;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}

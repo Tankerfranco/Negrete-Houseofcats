@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/*Grid y estilos de las secciones*/
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header" auto "main" 1fr "sec" auto "footer" 100px / 1fr;
+}
+
+.contenedor .header {
+  grid-area: header;
+}
+
+.contenedor .main {
+  grid-area: main;
+  background: #FFE7FF;
+}
+
+.contenedor .sec {
+  grid-area: sec;
+  background: #FFE7FF;
+}
+
+.contenedor .footer {
+  grid-area: footer;
+}
+
+/*Nav estilos*/
+.nav {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f5b1ff), color-stop(#fdaeef), color-stop(#ffade0), color-stop(#ffacd2), color-stop(#ffadc6), color-stop(#ffafbb), color-stop(#ffb1b1), color-stop(#ffb5a8), color-stop(#ffbb9b), color-stop(#ffc38c), color-stop(#ffcf7e), to(#ffdc73));
+  background-image: linear-gradient(to right bottom, #f5b1ff, #fdaeef, #ffade0, #ffacd2, #ffadc6, #ffafbb, #ffb1b1, #ffb5a8, #ffbb9b, #ffc38c, #ffcf7e, #ffdc73);
+}
+
+li a:hover {
+  -webkit-transition: 1seg;
+  transition: 1seg;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 320px) {
+  li a:hover {
+    font-size: 2rem;
+  }
+}
+
+/*Footer estilos*/
+.footer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f5b1ff), color-stop(#fdaeef), color-stop(#ffade0), color-stop(#ffacd2), color-stop(#ffadc6), color-stop(#ffafbb), color-stop(#ffb1b1), color-stop(#ffb5a8), color-stop(#ffbb9b), color-stop(#ffc38c), color-stop(#ffcf7e), to(#ffdc73));
+  background-image: linear-gradient(to right bottom, #f5b1ff, #fdaeef, #ffade0, #ffacd2, #ffadc6, #ffafbb, #ffb1b1, #ffb5a8, #ffbb9b, #ffc38c, #ffcf7e, #ffdc73);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__redesSociales {
+  margin: auto;
+  text-align: center;
+}
+
+.footer__redesSociales--facebook {
+  color: #000;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__redesSociales--facebook {
+    color: brown;
+  }
+}
+
+.footer__redesSociales--twitter {
+  color: #000;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__redesSociales--twitter {
+    color: brown;
+  }
+}
+
+.footer__redesSociales--instagram {
+  color: #000;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__redesSociales--instagram {
+    color: brown;
+  }
+}
+
+.footer a i:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media screen and (max-width: 320px) {
+  .footer a i:hover {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+}
+
+/*INDEX*/
+.banner {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd180), to(#fbc2eb79)), url(../imagenes/gato.png);
+  background-image: linear-gradient(to top, #a18cd180 0%, #fbc2eb79 100%), url(../imagenes/gato.png);
+  height: 80vh;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner--presentacion {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.videosIndex {
+  font-family: 'Lato', sans-serif;
+}
+
+.videosIndex--titulo {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.videosIndex__articulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.videosIndex__articulo--iframe {
+  margin-right: 20px;
+}
+
+.videosIndex--texto {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*Razas*/
+/*Main*/
+#tituloRazas {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.cont {
+  width: 100%;
+  height: calc(100vh - auto - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.cont__cartaRaza {
+  width: 330px;
+  height: 600px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.cont__cartaRaza--imagen {
+  width: 330px;
+  height: 220px;
+}
+
+.cont__cartaRaza--raza {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.cont__cartaRaza--texto {
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.cont__cartaRaza--texto {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4054c5;
+}
+
+.cont__cartaRaza:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Cuidados*/
+/*Main*/
+#tituloCuidado {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.tacho {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.tacho__cuidados {
+  margin: 0px auto 100px;
+  width: 500px;
+  padding: 15px;
+}
+
+.tacho__cuidados--img {
+  width: 100%;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.tacho__cuidados--img:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.tacho__cuidados--pie {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.tacho__cuidados--subrayado {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.tacho__cuidados--texto {
+  color: black;
+}
+
+/*Multimedia*/
+#tituloMultimedia {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.gridMain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 50px;
+  padding: 20px;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gridMain--gridImagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gridMain--itemUno {
+  background-image: url(../imagenes/gatoUno.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemDos {
+  background-image: url(../imagenes/gatoDos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemTres {
+  background-image: url(../imagenes/gatoTres.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemCuatro {
+  background-image: url(../imagenes/gatoCuatro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.video--iframe {
+  margin: 10px 20px;
+}
+
+/*Contacto*/
+/*Main*/
+#tituloContacto {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.textoContacto {
+  margin: 30px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .textoContacto {
+    font-size: 1.5rem;
+    color: blueviolet;
+  }
+}
+
+.tachoForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 20px;
+}
+
+.tachoForm--formulario {
+  border: 3px solid black;
+  border-radius: 3px;
+  margin: 10px 0 50px 0;
+  padding: 10px;
+  width: 350px;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 320px) {
+  .tachoForm--formulario {
+    border: none;
+  }
+}
+
+.tachoForm--boton {
+  width: 6em;
+  height: 2em;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: #f6828c;
+  -webkit-box-shadow: 3px 3px #e23947;
+          box-shadow: 3px 3px #e23947;
+  font-size: large;
+}
