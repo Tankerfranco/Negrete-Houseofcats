@@ -1,0 +1,17 @@
+/*Error404*/
+
+.fondo{
+    background: #FFE7FF;
+}
+
+.contenido{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    &__titulo{
+        font-size: 2rem;
+    }
+    &__texto{
+        font-size: 1.3rem;
+    }
+}

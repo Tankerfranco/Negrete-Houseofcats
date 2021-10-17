@@ -234,6 +234,11 @@ li a:hover {
   color: #4054c5;
 }
 
+.cont__cartaRaza--link {
+  color: black;
+  text-decoration: none;
+}
+
 .cont__cartaRaza:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
@@ -435,4 +440,30 @@ li a:hover {
   -webkit-box-shadow: 3px 3px #e23947;
           box-shadow: 3px 3px #e23947;
   font-size: large;
+}
+
+/*Error404*/
+.fondo {
+  background: #FFE7FF;
+}
+
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenido__titulo {
+  font-size: 2rem;
+}
+
+.contenido__texto {
+  font-size: 1.3rem;
 }
