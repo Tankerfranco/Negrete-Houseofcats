@@ -51,7 +51,7 @@ li a:hover {
   font-size: 2.3rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   li a:hover {
     font-size: 2rem;
   }
@@ -78,7 +78,7 @@ li a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer__redesSociales--facebook {
     color: brown;
   }
@@ -88,7 +88,7 @@ li a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer__redesSociales--twitter {
     color: brown;
   }
@@ -98,7 +98,7 @@ li a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer__redesSociales--instagram {
     color: brown;
   }
@@ -109,7 +109,7 @@ li a:hover {
           transform: rotate(45deg);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer a i:hover {
     -webkit-transform: rotate(35deg);
             transform: rotate(35deg);
@@ -120,7 +120,7 @@ li a:hover {
 .banner {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd180), to(#fbc2eb79)), url(../imagenes/gato.png);
   background-image: linear-gradient(to top, #a18cd180 0%, #fbc2eb79 100%), url(../imagenes/gato.png);
-  height: 70vh;
+  height: 85vh;
   background-size: cover;
   background-position: center top;
   overflow: hidden;
@@ -143,9 +143,9 @@ li a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .banner--presentacion {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -175,7 +175,7 @@ li a:hover {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .videosIndex__articulo--iframe {
     margin: 10px 0px 0px 0px;
   }
@@ -407,7 +407,7 @@ li a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .textoContacto {
     font-size: 1.5rem;
     color: blueviolet;
