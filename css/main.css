@@ -141,7 +141,12 @@ li a:hover {
   color: white;
   font-size: 3rem;
   text-align: center;
-  font-size: 2rem;
+}
+
+@media screen and (max-width: 320px) {
+  .banner--presentacion {
+    font-size: 2rem;
+  }
 }
 
 .videosIndex {

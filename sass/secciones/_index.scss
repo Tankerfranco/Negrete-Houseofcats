@@ -15,10 +15,10 @@
         color: white;
         font-size: 3rem;
         text-align: center;
-        @include movil
+        @include movil{
         font-size: 2rem;
+        }
     }
-    
 }
 
 .videosIndex{
