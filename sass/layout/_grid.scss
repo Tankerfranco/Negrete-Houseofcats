@@ -1,12 +1,13 @@
+@import "../parciales/mediaQueries";
 /*Grid y estilos de las secciones*/
 .contenedor {
     display: grid;
     grid-template: 
-        "header" auto
-        "main" 1fr
-        "sec" auto
-        "footer" 100px /
-        2fr;
+        "header header" auto
+        "main main" 1fr
+        "sec sec" auto
+        "footer footer" 100px /
+         auto 1fr;
 
     .header{
         grid-area: header;
@@ -23,3 +24,4 @@
         grid-area: footer;
     }
 }
+

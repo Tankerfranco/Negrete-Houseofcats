@@ -18,7 +18,7 @@ body {
 .contenedor {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" auto "main" 1fr "sec" auto "footer" 100px / 2fr;
+  grid-template: "header header" auto "main main" 1fr "sec sec" auto "footer footer" 100px / auto 1fr;
 }
 
 .contenedor .header {
@@ -120,7 +120,7 @@ li a:hover {
 .banner {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd180), to(#fbc2eb79)), url(../imagenes/gato.png);
   background-image: linear-gradient(to top, #a18cd180 0%, #fbc2eb79 100%), url(../imagenes/gato.png);
-  height: 80vh;
+  height: 70vh;
   background-size: cover;
   background-position: center top;
   overflow: hidden;
@@ -141,6 +141,7 @@ li a:hover {
   color: white;
   font-size: 3rem;
   text-align: center;
+  font-size: 2rem;
 }
 
 .videosIndex {
@@ -156,19 +157,23 @@ li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .videosIndex__articulo--iframe {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .videosIndex__articulo--iframe {
+    margin: 10px 0px 0px 0px;
+  }
 }
 
 .videosIndex--texto {

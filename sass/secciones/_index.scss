@@ -1,7 +1,8 @@
+@import "../parciales/mediaQueries";
 /*INDEX*/
 .banner{
     background-image: linear-gradient(to top, #a18cd180 0%, #fbc2eb79 100%), url(../imagenes/gato.png);
-    height: 80vh;
+    height: 70vh;
     background-size: cover;
     background-position: center top;
     overflow: hidden;
@@ -14,7 +15,10 @@
         color: white;
         font-size: 3rem;
         text-align: center;
+        @include movil
+        font-size: 2rem;
     }
+    
 }
 
 .videosIndex{
@@ -25,11 +29,14 @@
     }
     &__articulo{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
         &--iframe{
-            margin-right: 20px;
+            margin-right: 10px;
+            @include movil{
+                margin: 10px 0px 0px 0px;
+            }
         }
     }
     &--texto{
