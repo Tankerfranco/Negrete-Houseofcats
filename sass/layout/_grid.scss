@@ -3,10 +3,10 @@
     display: grid;
     grid-template: 
         "header" auto
-        "main" 1fr
+        "main" auto
         "sec" auto
         "footer" 100px /
-         1fr;
+        auto;
 
     .header{
         grid-area: header;
