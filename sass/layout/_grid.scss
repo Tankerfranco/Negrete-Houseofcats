@@ -3,7 +3,7 @@
     display: grid;
     grid-template: 
         "header" auto
-        "main" auto
+        "main" 1fr
         "sec" auto
         "footer" 100px /
         auto;

@@ -18,7 +18,7 @@ body {
 .contenedor {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" auto "main" auto "sec" auto "footer" 100px / auto;
+  grid-template: "header" auto "main" 1fr "sec" auto "footer" 100px / auto;
 }
 
 .contenedor .header {
@@ -402,44 +402,6 @@ li a:hover {
     font-size: 1.5rem;
     color: blueviolet;
   }
-}
-
-.tachoForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-top: 20px;
-}
-
-.tachoForm--formulario {
-  border: 3px solid black;
-  border-radius: 3px;
-  margin: 10px 0 50px 0;
-  padding: 10px;
-  width: 350px;
-  font-size: 1.6rem;
-}
-
-@media screen and (max-width: 320px) {
-  .tachoForm--formulario {
-    border: none;
-  }
-}
-
-.tachoForm--boton {
-  width: 6em;
-  height: 2em;
-  border-color: transparent;
-  border-radius: 10px;
-  background-color: #f6828c;
-  -webkit-box-shadow: 3px 3px #e23947;
-          box-shadow: 3px 3px #e23947;
-  font-size: large;
 }
 
 /*Error404*/
