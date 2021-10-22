@@ -8,21 +8,12 @@
         text-align: center;
         &--facebook{
             color: #000;
-            @include movil {
-                color: brown;
-            }
         }
         &--twitter{
-            color: #000;
-            @include movil {
-                color: brown;
-            }            
+            color: #000;           
         }
         &--instagram{
             color: #000;
-            @include movil {
-                color: brown;
-            }
         }
     }
     a i:hover {
