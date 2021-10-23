@@ -78,30 +78,12 @@ li a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 425px) {
-  .footer__redesSociales--facebook {
-    color: brown;
-  }
-}
-
 .footer__redesSociales--twitter {
   color: #000;
 }
 
-@media screen and (max-width: 425px) {
-  .footer__redesSociales--twitter {
-    color: brown;
-  }
-}
-
 .footer__redesSociales--instagram {
   color: #000;
-}
-
-@media screen and (max-width: 425px) {
-  .footer__redesSociales--instagram {
-    color: brown;
-  }
 }
 
 .footer a i:hover {
@@ -118,8 +100,7 @@ li a:hover {
 
 /*INDEX*/
 .banner {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd180), to(#fbc2eb79)), url(../imagenes/gato.png);
-  background-image: linear-gradient(to top, #a18cd180 0%, #fbc2eb79 100%), url(../imagenes/gato.png);
+  background-image: url(../imagenes/gato.png);
   height: 70vh;
   background-size: cover;
   background-position: center top;
@@ -265,50 +246,65 @@ li a:hover {
   margin-top: 20px;
 }
 
-.tacho {
+.cont {
+  width: 100%;
+  height: calc(100vh - auto - 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
-.tacho__cuidados {
-  margin: 0px auto 100px;
-  width: 500px;
-  padding: 15px;
-}
-
-.tacho__cuidados--img {
-  width: 100%;
-  height: 400px;
-  border-radius: 50%;
-}
-
-.tacho__cuidados--img:hover {
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-}
-
-.tacho__cuidados--pie {
+.cont__carta {
+  width: 330px;
+  height: 600px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
   text-align: center;
-  font-size: 2rem;
-  font-family: 'Lato', sans-serif;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
-.tacho__cuidados--subrayado {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.cont__carta--imagen {
+  width: 330px;
+  height: 220px;
 }
 
-.tacho__cuidados--texto {
+.cont__carta--cuidado {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.cont__carta--texto {
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.cont__carta--texto {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4054c5;
+}
+
+.cont__carta--link {
   color: black;
+  text-decoration: none;
+}
+
+.cont__carta:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 /*Multimedia*/
@@ -410,7 +406,6 @@ li a:hover {
 @media screen and (max-width: 425px) {
   .textoContacto {
     font-size: 1.5rem;
-    color: blueviolet;
   }
 }
 
