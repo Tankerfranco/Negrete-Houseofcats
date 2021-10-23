@@ -318,9 +318,9 @@ li a:hover {
 .gridMain {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, auto))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-auto-rows: minmax(250px, auto);
+  -ms-grid-columns: (minmax(310px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+  grid-auto-rows: minmax(260px, auto);
   gap: 50px;
   padding: 20px;
   margin-top: 100px;
@@ -371,6 +371,34 @@ li a:hover {
   background-repeat: no-repeat;
 }
 
+.gridMain--itemCinco {
+  background-image: url(../imagenes/gatoCinco.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemSeis {
+  background-image: url(../imagenes/gatoSeis.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemSiete {
+  background-image: url(../imagenes/gatoSiete.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemOcho {
+  background-image: url(../imagenes/gatoOcho.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,30 +411,85 @@ li a:hover {
 }
 
 .video--iframe {
-  margin: 10px 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .video--iframe {
+    margin: 10px;
+  }
 }
 
 /*Contacto*/
 /*Main*/
-#tituloContacto {
+.recipiente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recipiente__titulo {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
   margin-top: 20px;
 }
 
-.textoContacto {
-  margin: 30px;
-  padding-top: 50px;
-  padding-bottom: 10px;
+.recipiente__imagen {
+  width: 200px;
+}
+
+.recipiente__texto {
+  padding-bottom: 20px;
   font-size: 2rem;
   text-align: center;
 }
 
 @media screen and (max-width: 425px) {
-  .textoContacto {
+  .recipiente__texto {
     font-size: 1.5rem;
   }
+}
+
+/*Gracias Estilos*/
+.tacho {
+  background: #FFE7FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tacho__texto {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tacho__boton {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
 }
 
 /*Error404*/

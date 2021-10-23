@@ -1,0 +1,18 @@
+/*Gracias Estilos*/
+
+.tacho{
+    background: #FFE7FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__texto{
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__boton{
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: white;        
+    }
+}
